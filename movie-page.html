@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>MyFlix</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">My List</a>
+    </nav>
+  </header>
+
+  <section class="movie-player">
+    <h2>Now Playing</h2>
+    <div class="video-container">
+      <!-- Video player with subtitles -->
+       <video id="movieVideo" controls autoplay width="800">
+  <source id="videoSource" src="" type="video/mp4">
+ <!--  Empty tracks for dynamic handling -->
+  <track label="English" kind="subtitles" srclang="en" default>
+  <track label="Indonesian" kind="subtitles" srclang="id">
+  <track label="Malay" kind="subtitles" srclang="ms">
+  <track label="Arabi" kind="subtitles" srclang="ar">
+  <track label="Khmer" kind="subtitles" srclang="km">
+  Your browser does not support the video tag.
+</video>
+
+
+
+      <div>
+        <label for="subtitleSelect">Choose Subtitles:</label>
+        <select id="subtitleSelect">
+          <option value="0">English</option>
+          <option value="1">Indonesian</option>
+          <option value="2">Malay</option>
+		  <option value="3">Arabi</option>
+		  <option value="4">Khmer</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <script src="movie-page.js"></script>
+</body>
+</html>

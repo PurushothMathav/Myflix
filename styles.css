@@ -1,0 +1,79 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #202020;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.banner {
+  text-align: center;
+  padding: 50px;
+  background-image: url('banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.banner button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: red;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.categories {
+  margin: 20px;
+}
+
+.movie-row {
+  display: flex;
+  overflow-x: auto;
+}
+
+.movie-row img {
+  width: 150px;
+  margin: 5px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.movie-row img:hover {
+  transform: scale(1.1);
+}
+
+/* Center the video player and improve spacing */
+.movie-player {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.video-container {
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #202020;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #fff;
+}
